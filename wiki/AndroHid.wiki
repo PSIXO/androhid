@@ -1,8 +1,12 @@
-#summary A technical documentation.
+#summary Technical details
 === Introduction ===
 
 Some technical issues of AndroHid will be described here, going into technical details which may not be of any interest for end users.
 
 === Bluetooth and l2cap ===
 
-Android SDK does not provide any functionality for the l2cap bluetooth protocol which is required for the bluetooth HID specification. Nevertheless we can handle with the android bluetooth stack _bluez_ directly via the _native development kit_ (NDK). Hence all bluetooth handling is done in native C code working even on android versions previous to 2.0 where for the first time bluetooth functionality was invented in the SDK.
+Android SDK does not provide any functionality for the l2cap bluetooth protocol which is required for the bluetooth HID specification. Nevertheless we can handle the android bluetooth stack _bluez_ directly via the _native development kit_ (NDK). Hence all bluetooth handling is done in native C code working even on android versions previous to 2.0 where for the first time bluetooth functionality was invented in the SDK. 
+
+=== Service discovery protocol ===
+
+To add the sdp record to the android sdp server the linux tool _sdptool_ is used. As dbus interaction to bluez is locked down for users we need to do this as root. This is the reason why AndroHid requires a rooted android device. Normally the HID specification provides not only keyboard but also mouse signal support. As we can't add an user defined sdp record, there will only be keyboard support provided for now.
