@@ -10,3 +10,7 @@ Unfortunately the android SDK does not provide a feature to add a record to the 
   * The Linux Bluez stack is tested successfully under KUbuntu and Arch Linux. 
   * The Windows bluetooth stack does't work at the moment.
   * The Mac OS X bluetooth stack is not tested for now. Please inform me about your results!
+
+*Why does AndroHid not work with Windows?
+
+THe reason are technical issues which are described in an other wiki page.
