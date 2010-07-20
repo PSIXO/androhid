@@ -11,7 +11,18 @@ To map the different tab views of AndroHid, as eg. the player tab start the pref
 || https://androhid.googlecode.com/svn/images/view_button_indices.png ||
 || Button numbering ||
 
-Clicking on one of the list entries you can adjust now two parameters called keycode and modifier. The keycode defines a keysignal as the user would produce one by hitting a key of his keyboard (eg. lower case letter "a" or numbers "2"). If the user wants to enter a capital letter "A" he simultaneously presses the "Shift" and "a" keys. The difference between lower case and upper case is represented by a varying modifier code. Examples for modifier keys are "Ctrl Right", "Ctrl Left" or "Alt".
+Clicking on one of the list entries you can adjust now two parameters called keycode and modifier. The keycode defines a keysignal as the user would produce one by hitting a key of his keyboard (eg. lower case letter "a" or numbers "2"). If the user wants to enter a capital letter "A" he simultaneously presses the "Shift" and "a" keys. The difference between lower case and upper case is represented by a varying modifier code. Examples for modifier keys are "Ctrl Right", "Ctrl Left" or "Alt". To combine several modifiers to a keystroke combination you have to add the modifier codes up ( for "Right Alt" + "Right Ctrl" you get 1 + 4 = 5 for your modifier value).
+
+=== Examples ===
+
+For better understanding have a look at some examples:
+
+|| Keystroke || Keycode || Modifier code ||
+|| "a" || 4 || 0 ||
+|| "A" || 4 || 2 or 32 ||
+|| "Ctrl" + "Alt" + "Delete" || 42 || 5 or 65 or 20 ||
+|| "Left Gui" + "c" || 6 || 8 ||
+|| "XF86AudioPlay" || 232 || 0 ||
 
 === Possible Keycodes and modifiers ===
 
