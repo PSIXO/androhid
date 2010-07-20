@@ -2,16 +2,16 @@
 
 === User defined keycodes ===
 
-Although the default key mapping is a good prerequisite to let you start out of the box with AndroHid, in some cases user configuration becomes necessary. As different music players (and video players, presenter programs) use different keyboard shortcuts, so AndroHid provides a simple way for user defined AndroHid keyboard mapping. This short HowTo contains all needed information generate a user defined Mapping.
+Although the default key mapping is a good prerequisite to let you start out of the box with AndroHid, in some cases user configuration becomes necessary. As different music players (and video players, presenter programs) use different keyboard shortcuts, so AndroHid provides a simple way for user defined AndroHid keyboard mapping. This short HowTo contains all needed information to generate a user defined Mapping.
 
 === Keycodes and Modifiers ===
 
-To map the different tab views of AndroHid, as eg. the player tab start the preferences menu and go to Settings --> Player tab mapping. You will find a list with entries called button 1 to 12. The entries correspond to the twelve different buttons which you can see in the player tab view, where they are ordered in a 3 times 4 grid. The button numbering can be seen in the picture. 
+To map the different tab views of AndroHid, as eg. the player tab start the preferences menu and go to Settings --> Player tab mapping. You will find a list with entries called button 1 to 12. The entries correspond to the twelve buttons which you can see in the player tab view, where they are ordered in a 3 by 4 grid. The button numbering can be seen in the picture. 
 
 || https://androhid.googlecode.com/svn/images/view_button_indices.png ||
 || Button numbering ||
 
-Clicking on one of the list entries you can adjust now two parameters called keycode and modifier. The keycode defines a keysignal as the user would produce one by hitting a key of his keyboard (eg. lower case letter "a" or numbers "2"). If the user wants to enter a capital letter "A" he simultaneously presses the "Shift" and "a" keys. The difference between lower case and upper case is represented by a varying modifier code. Examples for modifier keys are "Ctrl Right", "Ctrl Left" or "Alt". To combine several modifiers to a keystroke combination you have to add the modifier codes up ( for "Right Alt" + "Right Ctrl" you get 1 + 4 = 5 for your modifier value).
+Clicking on one of the list entries you can adjust now two parameters called keycode and modifier. The keycode defines a keysignal as the user would produce one by hitting a key of his keyboard (eg. lower case letter "a" or number "2"). If the user wants to enter a capital letter "A" he simultaneously presses the "Shift" and "a" keys. The difference between lower case and upper case is represented by a varying modifier code. Examples for modifier keys are "Ctrl Right", "Ctrl Left" or "Alt". To combine several modifiers to a keystroke combination you have to add the modifier codes up ( to get "Right Alt" + "Right Ctrl" you obtain 1 + 4 = 5 for your modifier value).
 
 === Examples ===
 
@@ -38,7 +38,7 @@ Possible modifier codes are:
 || 64 || Right Alt ||
 || 128 || Right Gui ||
 
-The following list of keycodes is not complete nor will it match different country keymappings. Eg. on a german keyboard the keycode 28 maps to "z" instead of "y" on US Keyboards. If you understood the logic it will be easy for you to guess the right keycodes, just play around a bit...
+The following list of keycodes is not complete nor will it match different country keymappings. Eg. on a german keyboard the keycode 28 maps to "z" instead of "y" on US Keyboards. If you understood the logic guessing the right keycodes will be easy for you, just play around a bit...
 
 || Keycode || Keyboard Signal ||
 || 4 || a and A ||
