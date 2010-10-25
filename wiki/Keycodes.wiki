@@ -2,7 +2,7 @@
 
 === User defined keycodes ===
 
-Although the default key mapping is a good prerequisite to let you start out of the box with AndroHid, in some cases user configuration becomes necessary. As different music players (and video players, presenter programs) use different keyboard shortcuts, so AndroHid provides a simple way for user defined AndroHid keyboard mapping. This short HowTo contains all needed information to generate a user defined Mapping.
+Although the default key mapping is a good prerequisite to let you start out of the box with AndroHid, in some cases user configuration becomes necessary. As different music players (and video players, presenter programs) use different keyboard shortcuts, AndroHid provides a simple way for user defined keyboard mapping. This short HowTo contains all needed information to generate a user defined mapping.
 
 === Keycodes and Modifiers ===
 
